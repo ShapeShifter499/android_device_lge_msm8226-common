@@ -4,6 +4,8 @@ ifneq ($(filter x5 w3ds w5 w7 g2m jag3gds jagnm,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 
+LOCAL_CLANG := false
+
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_SRC_FILES := CameraWrapper.cpp
 
